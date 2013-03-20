@@ -3,24 +3,35 @@
 * Main page template for project
 */
 ?>
-<h1>HTML Ipsum Presents</h1>
-<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-<h2>Header Level 2</h2>
-<ol>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-<li>Aliquam tincidunt mauris eu risus.</li>
-</ol>
-<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-<h3>Header Level 3</h3>
-<ul>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-<li>Aliquam tincidunt mauris eu risus.</li>
-</ul>
-<pre><code>
-#header h1 a {
-display: block;
-width: 300px;
-height: 80px;
-}
-</code></pre>
-<button>Hi</button>
+<div id="content" data-role="content">
+		<form>
+          <div id="loginForm">
+			<h2>
+              Enter your Username and Password to login 
+              </h2>
+              <div id="usernameDiv" data-role="field-contain">
+				<input type="text" name="username" placeholder="Username" id="username"/>
+              </div>
+              <!-- end usernameDiv -->
+              <div id="passwordDiv" data-role="field-contain">
+				<input type="password" name="password" placeholder="Password" id="password"/>
+              </div>
+              <!-- end passwordDiv -->
+              <div id="loginButtonDiv" data-role="field-contain">
+				<button name="login" type="submit" data-inline="true">Login</button>
+              </div>
+              <!-- end loginButtonDiv -->
+              <div id="SignUpButtonDiv" data-role="field-contain">
+				<button name="SignUp" type="submit" data-inline="true">Sign Up</button>
+              </div>
+              <!-- end SignUpButtonDiv -->
+          </div>
+          </form>
+          <div id="content" data-role="content">
+			<div id="LoginForm">
+              <h1>
+                Enter your credentials to login 
+              </h1>
+          </div>
+          
+          </div>
