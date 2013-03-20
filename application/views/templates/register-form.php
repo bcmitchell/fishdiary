@@ -14,7 +14,7 @@ echo '<form action="?" method ="POST">';
         echo '<p>Your have been registered.</p>';
 ?>
 
-
+<div data-role="page" id="register-form">
 <form action="" method="post" class="form-signin">
 <h2>Register</h2>
 
@@ -38,3 +38,4 @@ echo '<form action="?" method ="POST">';
 
 
 </form>
+</div>

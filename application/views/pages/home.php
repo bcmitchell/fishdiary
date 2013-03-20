@@ -25,13 +25,6 @@
 				<button name="SignUp" type="submit" data-inline="true">Sign Up</button>
               </div>
               <!-- end SignUpButtonDiv -->
-          </div>
           </form>
-          <div id="content" data-role="content">
-			<div id="LoginForm">
-              <h1>
-                Enter your credentials to login 
-              </h1>
-          </div>
+            </div>
           
-          </div>
