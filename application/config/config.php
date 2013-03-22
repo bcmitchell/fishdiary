@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:8888/bdf1302/Mitchell_Bosco/MVC_Framework_Read';
+$config['base_url']	= 'http://localhost:8888/fishdiarytemp';
 
 /*
 |--------------------------------------------------------------------------
