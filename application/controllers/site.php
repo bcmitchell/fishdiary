@@ -12,7 +12,7 @@ class Site extends CI_Controller {
 
 	function members_area(){
 
-		$this->load->view('members_area');
+		$this->load->view('pages/members_area');
 	}
 	function is_logged_in()
 	{

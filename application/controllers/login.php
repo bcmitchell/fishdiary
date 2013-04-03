@@ -4,7 +4,7 @@ class Login extends CI_Controller {
 	
 	function index()
 	{
-		$data['main_content'] = 'pages/register';
+		$data['main_content'] = 'pages/home';
 		$this->load->view('templates/template', $data);
 	}
 	
