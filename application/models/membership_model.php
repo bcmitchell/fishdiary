@@ -1,6 +1,6 @@
 <?php
 
-class Membership_model extends Model {
+class Membership_model extends CI_Model {
 	
 	function validate()
 	{

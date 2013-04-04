@@ -4,12 +4,14 @@ class Login extends CI_Controller {
 	
 	function index()
 	{
+	
 		$data['main_content'] = 'pages/home';
 		$this->load->view('templates/template', $data);
 	}
 	
 	function validate_credentials()
 	{
+	
 		$this->load->model('membership_model');
 		$query = $this->membership_model->validate();
 		
@@ -35,6 +37,7 @@ class Login extends CI_Controller {
 	}
 	function create_member()
 	{
+	
 		$this->load->library('form_validation');
 		// field name, error message, validation rules
 		$this->form_validation->set_rules('first_name', 'Name', 'trim|required');
@@ -47,20 +50,23 @@ class Login extends CI_Controller {
 		
 		if($this->form_validation->run() == FALSE)
 		{
+		
 			$this->signup();
 		}
 		
 		else
-		{			
+		{		
+			
 			$this->load->model('membership_model');
 			
 			if($query = $this->membership_model->create_member())
 			{
-				$data['main_content'] = 'signup_successful';
+				$data['main_content'] = 'pages/signup_successful';
 				$this->load->view('includes/template', $data);
 			}
 			else
 			{
+			
 				$this->load->view('register');			
 			}
 		}

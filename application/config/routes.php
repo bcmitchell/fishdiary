@@ -39,7 +39,7 @@ $route['404_override'] = 'controller/method/parameter';
 */
 
 $route['default_controller'] = 'login';
-$route['(:any)'] = '';
+//$route['(:any)'] = '';
 
 
 

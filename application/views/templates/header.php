@@ -18,7 +18,7 @@
       </div>
 <div data-role="navbar" data-theme="b">
 	<ul>
-    	<li><a href="#content" data-role="button">Home</a></li>
+    	<li><a href="login.php/index" data-role="button">Home</a></li>
         <li><a href="registerV.php" data-role="button">Sign Up</a></li>
         <li><a href="@page1" data-role="button">About</a></li>
     </ul>
