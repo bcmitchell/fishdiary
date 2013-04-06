@@ -6,7 +6,7 @@ class Site extends CI_Controller {
 	{
 		parent::__construct();
 		$this->is_logged_in();
-		$this->load->helper('url');
+		
  
 	}
 

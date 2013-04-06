@@ -2,16 +2,17 @@
 
 class Login extends CI_Controller {
 	
-	function index()
-	{
 	
+
+	function index()
+	{	
 		$data['main_content'] = 'pages/home';
 		$this->load->view('templates/template', $data);
 	}
 	
 	function validate_credentials()
 	{
-	
+		
 		$this->load->model('membership_model');
 		$query = $this->membership_model->validate();
 		
@@ -23,7 +24,7 @@ class Login extends CI_Controller {
 			);
 			
 			$this->session->set_userdata($data);
-			redirect('site/members_area');
+			redirect('site/members_area', $photos);
 		}
 		else
 		{

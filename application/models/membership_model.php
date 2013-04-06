@@ -20,7 +20,8 @@ class Membership_model extends CI_Model {
 			'last_name' => $this->input->post('last_name'),
 			'email_address' => $this->input->post('email_address'),
 			'username' => $this->input->post('username'),
-			'password' => md5($this->input->post('password'))
+			'password' => md5($this->input->post('password')),
+			'password2' => md5($this->input->post('password2'))
 			);
 			
 			$insert = $this->db->insert('membership', $new_member_insert_data);
